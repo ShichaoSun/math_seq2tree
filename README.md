@@ -26,5 +26,5 @@ python3 run_seq2tree.py
 |--------|--------|
 |Hybrid model w/ SNI | 64.7% | 
 |Ensemble model w/ EN | 68.4% | 
-|Seq2Tree w/o Bottom-up RvNN | 70.8% | 
+|Seq2Tree w/o Bottom-up RvNN | 70.0% | 
 |Seq2Tree| **74.3%** | 
