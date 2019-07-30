@@ -1,6 +1,11 @@
 # Goal-Driven Tree-Structured Neural Models for Solving Math Word Problems
 
-This repository is the [PyTorch](http://pytorch.org/) implementation for the approaches. 
+This repository is the [PyTorch](http://pytorch.org/) implementation for the IJCAI 2019 accepted paper:
+> Zhipeng Xie&#10013 and Shichao Sun&#10013,
+> [Goal-Driven Tree-Structured Neural Models for Solving Math Word Problems](http://www.ke.fudan.edu.cn/papers/ijcai2019-math.pdf)
+> IJCAI 2019. 
+
+&#10013 indicates equal contribution.
 
 ## Seq2Tree Model
 A Seq2Tree Neural Network containing top-down Recursive Neural Network and bottom-up Recursive Neural Network
