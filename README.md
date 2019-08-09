@@ -2,7 +2,7 @@
 
 This repository is the [PyTorch](http://pytorch.org/) implementation for the IJCAI 2019 accepted paper:
 > Zhipeng Xie* and Shichao Sun*,
-> [Goal-Driven Tree-Structured Neural Models for Solving Math Word Problems](http://www.ke.fudan.edu.cn/papers/ijcai2019-math.pdf)
+> [Goal-Driven Tree-Structured Neural Models for Solving Math Word Problems](https://www.ijcai.org/proceedings/2019/0736.pdf)
 > IJCAI 2019. 
 
 \* indicates equal contribution.
@@ -33,3 +33,19 @@ python3 run_seq2tree.py
 |Ensemble model w/ EN | 68.4% | 
 |Seq2Tree w/o Bottom-up RvNN | 70.0% | 
 |Seq2Tree| **74.3%** | 
+
+
+## Citation
+    @inproceedings{ijcai2019-736,
+      title     = {A Goal-Driven Tree-Structured Neural Model for Math Word Problems},
+      author    = {Xie, Zhipeng and Sun, Shichao},
+      booktitle = {Proceedings of the Twenty-Eighth International Joint Conference on
+                   Artificial Intelligence, {IJCAI-19}},
+      publisher = {International Joint Conferences on Artificial Intelligence Organization},             
+      pages     = {5299--5305},
+      year      = {2019},
+      month     = {7},
+      doi       = {10.24963/ijcai.2019/736},
+      url       = {https://doi.org/10.24963/ijcai.2019/736},
+    }
+
