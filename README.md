@@ -1,8 +1,8 @@
-# Goal-Driven Tree-Structured Neural Models for Solving Math Word Problems
+# A Goal-Driven Tree-Structured Neural Model for Math Word Problems
 
 This repository is the [PyTorch](http://pytorch.org/) implementation for the IJCAI 2019 accepted paper:
 > Zhipeng Xie* and Shichao Sun*,
-> [Goal-Driven Tree-Structured Neural Models for Solving Math Word Problems](https://www.ijcai.org/proceedings/2019/0736.pdf)
+> [A Goal-Driven Tree-Structured Neural Model for Math Word Problems](https://www.ijcai.org/proceedings/2019/0736.pdf)
 > IJCAI 2019. 
 
 \* indicates equal contribution.
