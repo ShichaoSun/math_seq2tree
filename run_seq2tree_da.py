@@ -21,7 +21,11 @@ pairs, generate_nums, copy_nums = transfer_num(data)
 
 temp_pairs = []
 for p in pairs:
-    temp_pairs.append((p[0], from_infix_to_prefix(p[1]), p[2], p[3]))
+    t = from_infix_to_prefix(p[1])
+    if len(t) % 2 == 0:
+        continue
+    temp_pairs.append((p[0], t, p[2], p[3]))
+
 pairs = temp_pairs
 
 fold_size = int(len(pairs) * 0.2)
