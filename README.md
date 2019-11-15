@@ -20,9 +20,14 @@ A Seq2Tree Neural Network containing top-down Recursive Neural Network and botto
 
 ## Train and Test
 
-- Math23K: 
+- Seq2Tree model in Math23K: 
 ```
 python3 run_seq2tree.py
+```
+
+- Add Data Augmentation in Math23K: 
+```
+python3 run_seq2tree_da.py
 ```
 
 ## Results
