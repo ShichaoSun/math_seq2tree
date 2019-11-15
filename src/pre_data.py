@@ -345,7 +345,7 @@ def transfer_num(data):  # transfer num into "NUM"
                 num_pos.append(i)
         assert len(nums) == len(num_pos)
         # pairs.append((input_seq, out_seq, nums, num_pos, d["ans"]))
-        pairs.append((input_seq, out_seq, nums, num_pos))
+        pairs.append([input_seq, out_seq, nums, num_pos])
 
     temp_g = []
     for g in generate_nums:
@@ -667,8 +667,8 @@ def prepare_data(pairs_trained, pairs_tested, trim_min_count, generate_nums, cop
         output_cell = indexes_from_sentence(output_lang, pair[1], tree)
         # train_pairs.append((input_cell, len(input_cell), output_cell, len(output_cell),
         #                     pair[2], pair[3], num_stack, pair[4]))
-        train_pairs.append((input_cell, len(input_cell), output_cell, len(output_cell),
-                            pair[2], pair[3], num_stack))
+        train_pairs.append([input_cell, len(input_cell), output_cell, len(output_cell),
+                            pair[2], pair[3], num_stack])
     print('Indexed %d words in input language, %d words in output' % (input_lang.n_words, output_lang.n_words))
     print('Number of training data %d' % (len(train_pairs)))
     for pair in pairs_tested:
@@ -692,13 +692,13 @@ def prepare_data(pairs_trained, pairs_tested, trim_min_count, generate_nums, cop
         output_cell = indexes_from_sentence(output_lang, pair[1], tree)
         # train_pairs.append((input_cell, len(input_cell), output_cell, len(output_cell),
         #                     pair[2], pair[3], num_stack, pair[4]))
-        test_pairs.append((input_cell, len(input_cell), output_cell, len(output_cell),
-                           pair[2], pair[3], num_stack))
+        test_pairs.append([input_cell, len(input_cell), output_cell, len(output_cell),
+                           pair[2], pair[3], num_stack])
     print('Number of testind data %d' % (len(test_pairs)))
     return input_lang, output_lang, train_pairs, test_pairs
 
 
-def prepare_de_data(pairs_trained, pairs_tested, trim_min_count, generate_nums, copy_nums, tree=False):
+def prepare_da_data(pairs_trained, pairs_tested, trim_min_count, generate_nums, copy_nums, tree=False):
     input_lang = Lang()
     output_lang = Lang()
     train_pairs = []
@@ -967,7 +967,7 @@ def prepare_ex_train_batch(pairs_to_batch, batch_size, output_lang, source_rate=
     return input_batches, input_lengths, output_batches, output_lengths, nums_batches, num_stack_batches, num_pos_batches, num_size_batches
 
 
-def prepare_de_train_batch(pairs_to_batch, batch_size, output_lang, rate, english=False):
+def prepare_da_train_batch(pairs_to_batch, batch_size, output_lang, rate, english=False):
     pairs = []
     b_pairs = copy.deepcopy(pairs_to_batch)
     for pair in b_pairs:
