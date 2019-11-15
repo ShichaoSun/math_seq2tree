@@ -38,6 +38,7 @@ python3 run_seq2tree_da.py
 |Ensemble model w/ EN | 68.4% | 
 |Seq2Tree w/o Bottom-up RvNN | 70.0% | 
 |Seq2Tree| **74.3%** | 
+|Seq2Tree + Data Augmentation| **75.9%** | 
 
 
 ## Citation
