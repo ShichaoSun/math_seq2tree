@@ -7,6 +7,9 @@ This repository is the [PyTorch](http://pytorch.org/) implementation for the IJC
 
 \* indicates equal contribution.
 
+Further, I add a data augmentation strategy to generate new problem-tree pairs to train our model and achieve better performance.
+More specifically, I generate new equivalent expressions by using commutative property of addition and multiplication.
+
 ## Seq2Tree Model
 A Seq2Tree Neural Network containing top-down Recursive Neural Network and bottom-up Recursive Neural Network
 
