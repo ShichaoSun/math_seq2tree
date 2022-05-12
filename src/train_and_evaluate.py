@@ -1,3 +1,5 @@
+# coding: utf-8
+
 from src.masked_cross_entropy import *
 from src.pre_data import *
 from src.expressions_transfer import *
@@ -6,7 +8,6 @@ import math
 import torch
 import torch.optim
 import torch.nn.functional as f
-import time
 
 MAX_OUTPUT_LENGTH = 45
 MAX_INPUT_LENGTH = 120

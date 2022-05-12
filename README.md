@@ -10,7 +10,7 @@ This repository is the [PyTorch](http://pytorch.org/) implementation for the IJC
 ## Seq2Tree Model
 A Seq2Tree Neural Network containing top-down Recursive Neural Network and bottom-up Recursive Neural Network
 
-<img src='readme/tree_decoder.png' align="center" width="700px">
+<img src='readme/gts_model.png' align="center" width="700px">
 
 
 ## Requirements

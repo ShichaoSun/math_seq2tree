@@ -1,4 +1,5 @@
 # coding: utf-8
+import os
 from src.train_and_evaluate import *
 from src.models import *
 import time
@@ -14,6 +15,7 @@ weight_decay = 1e-5
 beam_size = 5
 n_layers = 2
 
+os.makedirs("models", exist_ok=True)
 data = load_raw_data("data/Math_23K.json")
 
 pairs, generate_nums, copy_nums = transfer_num(data)
